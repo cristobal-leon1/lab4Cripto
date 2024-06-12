@@ -6,14 +6,16 @@
 // @author   	C.León
 // @match    	https://cripto.tiiny.site/
 // @run-at   	document-end
-// @require  	https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js
 // @grant    	none
-// @require  	https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js#sha512-AVKpLB6nhBtUo5hKPBe2qRtDHRJdAYZZw5GHQG41mUJpOcE9UuJ1UId1CU8b/N8GyRduU43llsLpvxl+ZP2Z0A==
+// @require      https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js#sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ==
 // ==/UserScript==
 
 (function() {
 	'use strict';
-
+	if (window.scriptExecuted) {
+        return; // Si el script ya se ha ejecutado, salir
+    }
+    window.scriptExecuted = true; // Marcar el script como ejecutado
 	// Función para derivar la clave del primer carácter de cada oración en el párrafo
 	function obtenerConcatenacionPrimerCaracter(parrafo) {
     	var oraciones = parrafo.split('. ');
