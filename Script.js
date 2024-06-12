@@ -12,7 +12,7 @@
 
 (function() {
 	'use strict';
-	if (window.scriptExecuted) {
+    if (window.scriptExecuted) {
         return; // Si el script ya se ha ejecutado, salir
     }
     window.scriptExecuted = true; // Marcar el script como ejecutado
