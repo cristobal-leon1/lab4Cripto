@@ -8,6 +8,7 @@
 // @run-at   	document-end
 // @grant    	none
 // @require      https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js#sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ==
+// @license      MIT
 // ==/UserScript==
 
 (function() {
