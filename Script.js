@@ -2,7 +2,7 @@
 // @name     	LAB4-Cripto
 // @namespace	http://tampermonkey.net/
 // @version  	1.0
-// @description  LAB4-Cripto
+// @description  LAB4-Cripto-Script
 // @author   	C.León
 // @match    	https://cripto.tiiny.site/
 // @run-at   	document-end
