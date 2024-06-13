@@ -49,9 +49,8 @@
 
 	// Obtener los divs con mensajes cifrados
 	var elementos = document.querySelectorAll('[class^="M"]');
-	var mensajes = [];
 	var cantidadMensajes = elementos.length; // Contar la cantidad de mensajes cifrados
-	
+
 	// Imprimir la lista de mensajes en consola
 	console.log("Los mensajes cifrados son: "+ cantidadMensajes);
 
@@ -62,12 +61,6 @@
 
     	// Imprimir en consola
     	console.log("" + mensajeCifrado + " " + mensajeDescifrado);
-
-    	// Agregar al array de mensajes
-    	mensajes.push({
-        	cifrado: mensajeCifrado,
-        	descifrado: mensajeDescifrado
-    	});
 
     	// Mostrar en la página
     	var nuevoElemento = document.createElement("p");
