@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name     	LAB4-Cripto
 // @namespace	http://tampermonkey.net/
-// @version  	0.1
-// @description  Descripción del script
+// @version  	1.0
+// @description  LAB4-Cripto
 // @author   	C.León
 // @match    	https://cripto.tiiny.site/
 // @run-at   	document-end
@@ -16,6 +16,7 @@
         return; // Si el script ya se ha ejecutado, salir
     }
     window.scriptExecuted = true; // Marcar el script como ejecutado
+
 	// Función para derivar la clave del primer carácter de cada oración en el párrafo
 	function obtenerConcatenacionPrimerCaracter(parrafo) {
     	var oraciones = parrafo.split('. ');
@@ -50,6 +51,7 @@
 	var elementos = document.querySelectorAll('[class^="M"]');
 	var mensajes = [];
 	var cantidadMensajes = elementos.length; // Contar la cantidad de mensajes cifrados
+	
 	// Imprimir la lista de mensajes en consola
 	console.log("Los mensajes cifrados son: "+ cantidadMensajes);
 
